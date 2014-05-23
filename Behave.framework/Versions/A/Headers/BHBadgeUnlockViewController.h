@@ -11,6 +11,10 @@
 
 #import "BHPopupViewController.h"
 
+#if __has_include(<FacebookSDK/FacebookSDK.h>)
+#import <FacebookSDK/FacebookSDK.h>
+#endif
+
 @interface BHBadgeUnlockViewController : BHPopupViewController
 
 @property (nonatomic, readonly) BHBadge *badge;

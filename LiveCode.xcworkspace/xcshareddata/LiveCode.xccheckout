@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>B9E3D4CD-6233-4CFD-8055-DD4365567DBA</string>
+	<key>IDESourceControlProjectName</key>
+	<string>LiveCode</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>57765F1A-9AC7-4E39-8C59-3C4879509B1B</key>
+		<string>ssh://github.com/othierry/livecode-ios-behave-demo.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>LiveCode.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>57765F1A-9AC7-4E39-8C59-3C4879509B1B</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/othierry/livecode-ios-behave-demo.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>57765F1A-9AC7-4E39-8C59-3C4879509B1B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>57765F1A-9AC7-4E39-8C59-3C4879509B1B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>livecode-ios-behave-demo</string>
+		</dict>
+	</array>
+</dict>
+</plist>

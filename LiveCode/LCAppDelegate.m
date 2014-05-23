@@ -9,6 +9,7 @@
 #import "LCAppDelegate.h"
 
 #import <FacebookSDK/FacebookSDK.h>
+#import <MBProgressHUD/MBProgressHUD.h>
 
 @implementation LCAppDelegate
 
@@ -16,8 +17,9 @@
 {
     [self customizeAppearance:application];
     
-    [Behave sharedInstanceWithToken:@"fa5c816d20620890c5c2227fcced9d1ca03236f0009ba45a66c683ac3957ef10"];
-    [[Behave sharedInstance] setDelegate:self];
+    // Initialize Behave
+    [Behave sharedInstanceWithToken:@"REPLACE_WITH_YOUR_API_TOKEN"];
+    [Behave.sharedInstance setDelegate:self];
     
     return YES;
 }
@@ -43,10 +45,20 @@
 
 - (void)player:(BHPlayer *)player didUnlockBadge:(BHBadge *)badge
 {
-    // Display UI for badge unlock
-    BHBadgeUnlockViewController *badgeUnlockViewController = [[BHBadgeUnlockViewController alloc] initWithBadge:badge];
-    
-    [BHPopupPresenter presentPopupController:badgeUnlockViewController fromView:self.window];
+    // Display HUD while pre-loading Badge's image for better UX in case of low-connection
+    [MBProgressHUD showHUDAddedTo:self.window animated:YES];
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        [badge setIcon:[UIImage imageWithData:[NSData dataWithContentsOfURL:badge.iconURL]]];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            // Hide HUD
+            [MBProgressHUD hideAllHUDsForView:self.window animated:YES];
+            
+            // Display UI for badge unlock
+            BHBadgeUnlockViewController *badgeUnlockViewController = [[BHBadgeUnlockViewController alloc] initWithBadge:badge];
+            
+            [BHPopupPresenter presentPopupController:badgeUnlockViewController fromView:self.window];
+        });
+    });
 }
 
 @end

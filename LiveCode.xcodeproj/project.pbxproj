@@ -23,11 +23,11 @@
 		596309421926AD4E007EFBA4 /* LiveCodeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 596309411926AD4E007EFBA4 /* LiveCodeTests.m */; };
 		596309581926B846007EFBA4 /* LCLeaderboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 596309571926B846007EFBA4 /* LCLeaderboardViewController.m */; };
 		596309621926CDFC007EFBA4 /* LCLeaderboadCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 596309611926CDFC007EFBA4 /* LCLeaderboadCell.m */; };
+		59AC303F192FE30A00E917B4 /* Behave.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59AC303E192FE30A00E917B4 /* Behave.framework */; };
+		59AC3041192FE31100E917B4 /* BehaveResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 59AC3040192FE31100E917B4 /* BehaveResources.bundle */; };
 		59AD0DFE1926EDE3009B21B1 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59AD0DFD1926EDE3009B21B1 /* FacebookSDK.framework */; };
 		59AD0E03192A6905009B21B1 /* LCLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59AD0E01192A6905009B21B1 /* LCLoginViewController.m */; };
 		59AD0E04192A6905009B21B1 /* LCLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59AD0E02192A6905009B21B1 /* LCLoginViewController.xib */; };
-		59AD0E8E192FD90E009B21B1 /* Behave.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59AD0E8D192FD90E009B21B1 /* Behave.framework */; };
-		59AD0E90192FD925009B21B1 /* BehaveResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 59AD0E8F192FD925009B21B1 /* BehaveResources.bundle */; };
 		ACA0FDAECB10422D986794A5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 61D09E74892849329DA003C8 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -66,12 +66,12 @@
 		596309571926B846007EFBA4 /* LCLeaderboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCLeaderboardViewController.m; sourceTree = "<group>"; };
 		596309601926CDFC007EFBA4 /* LCLeaderboadCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCLeaderboadCell.h; sourceTree = "<group>"; };
 		596309611926CDFC007EFBA4 /* LCLeaderboadCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCLeaderboadCell.m; sourceTree = "<group>"; };
+		59AC303E192FE30A00E917B4 /* Behave.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Behave.framework; sourceTree = "<group>"; };
+		59AC3040192FE31100E917B4 /* BehaveResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = BehaveResources.bundle; path = Behave.framework/Versions/A/Resources/BehaveResources.bundle; sourceTree = SOURCE_ROOT; };
 		59AD0DFD1926EDE3009B21B1 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		59AD0E00192A6905009B21B1 /* LCLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCLoginViewController.h; sourceTree = "<group>"; };
 		59AD0E01192A6905009B21B1 /* LCLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCLoginViewController.m; sourceTree = "<group>"; };
 		59AD0E02192A6905009B21B1 /* LCLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LCLoginViewController.xib; sourceTree = "<group>"; };
-		59AD0E8D192FD90E009B21B1 /* Behave.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Behave.framework; sourceTree = "<group>"; };
-		59AD0E8F192FD925009B21B1 /* BehaveResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = BehaveResources.bundle; path = Behave.framework/Versions/A/Resources/BehaveResources.bundle; sourceTree = SOURCE_ROOT; };
 		61D09E74892849329DA003C8 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -83,7 +83,7 @@
 				596309191926AD4E007EFBA4 /* CoreGraphics.framework in Frameworks */,
 				59AD0DFE1926EDE3009B21B1 /* FacebookSDK.framework in Frameworks */,
 				5963091B1926AD4E007EFBA4 /* UIKit.framework in Frameworks */,
-				59AD0E8E192FD90E009B21B1 /* Behave.framework in Frameworks */,
+				59AC303F192FE30A00E917B4 /* Behave.framework in Frameworks */,
 				596309171926AD4E007EFBA4 /* Foundation.framework in Frameworks */,
 				ACA0FDAECB10422D986794A5 /* libPods.a in Frameworks */,
 			);
@@ -125,7 +125,7 @@
 		596309151926AD4D007EFBA4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				59AD0E8D192FD90E009B21B1 /* Behave.framework */,
+				59AC303E192FE30A00E917B4 /* Behave.framework */,
 				59AD0DFD1926EDE3009B21B1 /* FacebookSDK.framework */,
 				596309161926AD4E007EFBA4 /* Foundation.framework */,
 				596309181926AD4E007EFBA4 /* CoreGraphics.framework */,
@@ -139,7 +139,7 @@
 		5963091C1926AD4E007EFBA4 /* LiveCode */ = {
 			isa = PBXGroup;
 			children = (
-				59AD0E8F192FD925009B21B1 /* BehaveResources.bundle */,
+				59AC3040192FE31100E917B4 /* BehaveResources.bundle */,
 				596309281926AD4E007EFBA4 /* Main.storyboard */,
 				596309251926AD4E007EFBA4 /* LCAppDelegate.h */,
 				596309261926AD4E007EFBA4 /* LCAppDelegate.m */,
@@ -270,7 +270,7 @@
 				59AD0E04192A6905009B21B1 /* LCLoginViewController.xib in Resources */,
 				596309211926AD4E007EFBA4 /* InfoPlist.strings in Resources */,
 				5963092A1926AD4E007EFBA4 /* Main.storyboard in Resources */,
-				59AD0E90192FD925009B21B1 /* BehaveResources.bundle in Resources */,
+				59AC3041192FE31100E917B4 /* BehaveResources.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
